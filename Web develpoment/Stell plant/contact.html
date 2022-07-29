@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sets Steel Plant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="steel plant.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  </head>
+  <body>
+<nav>
+  <p>Sets Steel Plant</p>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+     <li><a href="#">Buisness</a>
+    <ul>
+      <li><a href="Team.html">Logistics</a></li>
+      <li><a href="Energy.html">Production</a></li>
+        <li><a href="Mining.html">Mining</a></li>
+    </ul>
+    </li>
+    <li><a href="#">Services</a></li>
+    <li><a  class="active" href="contact.html">Contact</a> </li>
+    <li><a  href="about.html">About</a> </li>
+    </ul>
+</nav>
+
+       <section class="contact">
+            <div class="content">
+              <h4>Contact Us</h4>
+              <p class="contact-p">We have given you enough information,
+                but we will be happy if you ocntact us for further instructions</p>
+            </div>
+            <div class="container">
+              <div class="contactInfo">
+                <div class="box">
+                  <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                  <div class="text">
+                      <h4>Address</h4>
+                      <p class="contact-p">Premlata Building 39,<br> Shakespeare Sarani,<br> Kolkata 700017.</p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                  <div class="text">
+                      <h4>Phone</h4>
+                      <p class="contact-p">91 33-22895200.</p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                  <div class="text">
+                      <h4>Email</h4>
+                      <p class="contact-p">info@rashmigroup.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contactForm">
+                <form class="contact_form" >
+                  <h5>Send Message</h5>
+                  <div class="inputBox">
+                    <input class="name" type="text" name="" required="required">
+                    <span>Full Name</span>
+                  </div>
+                  <div class="inputBox">
+                    <input class="email" type="text" name="" required="required">
+                    <span>Email</span>
+                  </div>
+                  <div class="inputBox">
+                    <input class="phone" type="text" name="" required="required">
+                    <span>Phone</span>
+                  </div>
+                  <div class="inputBox">
+                    <textarea class="msg" required="required"></textarea>
+                    <span>Type your message...</span>
+                  </div>
+                  <div class="inputBox">
+                    <input type="Submit" name="" value="Send">
+                  </div>
+                </form>
+              </div>
+            </div>
+       </section>
+
+       <section class="sec">
+       </section>
+        <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <script>
+
+        const form = document.queryselector('contact_form')
+
+        function sendMsg(e){
+          e.preventDefault()
+          const name = document.queryselector('.name')
+          const email = document.queryselector('.email')
+          const phone = document.queryselector('.phone')
+          const msg = document.queryselector('.msg')
+
+          Email.send({
+            SecureToken : "96dfd931-b147-458a-8d3e-6704a12f7e2e ",
+            To : 'sriabhijit2001@gmail.com',
+            From : email.value,
+            Subject : "Contact Form",
+            Body : msg.value
+          }).then(
+            message => alert(message)
+          );
+        }
+
+        form.addEventListener('submit',sendMsg);
+        </script>
+
+  </body>
+</html>

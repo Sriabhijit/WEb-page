@@ -1,0 +1,384 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Gideon Roman', cursive;
+}
+html{
+  scroll-behavior: smooth;
+}
+nav{
+  background-color: #f1f1f1;
+  width: 100%;
+  height:60px;
+  padding-top: 10px;
+}
+nav p{
+  color: #222;
+  font-size: 50px;
+  line-height: 55px;
+  float: left;
+  padding: 0 20px;
+  font-style: italic;
+}
+nav ul{
+  float:right;
+}
+nav ul li{
+float: left;
+list-style: none;
+position: relative;
+padding-left: 15px;
+padding-right: 10px;
+}
+nav ul li a{
+  display: block;
+  font-family: sans-serif;
+  color: #222;
+  font-size: 16px;
+  font-weight: bold;
+  padding:15px 14px;
+  text-decoration: none;
+  font-family: 'Gideon Roman', cursive;
+}
+nav ul li a.active{
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 4px;
+}
+nav ul li a:hover{
+  background-color: #ddd;
+  display: block;
+ border-radius: 4px;
+}
+nav ul li ul{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 4px;
+  padding-left: 0;
+  left:1px;
+  z-index: 1000;
+}
+nav ul li:hover ul{
+ display: block;
+}
+nav ul li ul li a{
+    padding: 12px 14px;
+    border-radius: 4px;
+
+}
+nav ul li ul li a:hover{
+    background-color: #ddd;
+}
+
+.sec{
+  width: 100%;
+}
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: dodgerblue;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+
+h2{
+  font-style: italic;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: #5E454B;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.top{
+  text-align: center;
+}
+.home-p{
+  font-size: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-bottom: 50px;
+}
+.hom-top{
+background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/FMG_Christmas_Creek.jpg/1200px-FMG_Christmas_Creek.jpg?20181102171147");
+height: 500px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100% 100%;
+}
+.first-par{
+  width: 50%;
+  padding-left: 450px;
+  padding-top: 50px;
+  text-align: left;
+}
+.boat{
+  float: right;
+  position: relative;
+  bottom:  90px;
+  left: 40px;
+}
+.train{
+  float:left;
+  position: relative;
+  right:50px;
+  bottom: 50px;
+}
+h3{
+  padding-left: 450px;
+  padding-top: 80px;
+  font-size: 30px;
+}
+.second-par{
+ padding-top: 50px;
+ padding-left: 500px;
+ width:50%;
+ text-align: left;
+}
+.min-top{
+  background-image: url("https://sail.co.in/sites/default/files/banner/2020-07/Raw-Materials-Division.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+/*This is logistics end*/
+/*This is mining start */
+.mi{
+  padding-top: 300px;
+  font-size: 50px;
+  color: white;
+}
+.mip{
+  font-size: 40px;
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
+  padding-top: 80px;
+  padding-left: 170px;
+}
+.mip2{
+padding-top: 50px;
+font-size: 20px;
+text-align: justify;
+width: 70%;
+padding-left: 250px;
+line-height: 35px;
+}
+.miimage{
+  height: 400px;
+  width: 100%;
+  padding-top: 50px;
+}
+img{
+  padding-top: 50px;
+}
+/*This is end of mining*/
+/*This is start of about page*/
+.abhead{
+ padding-left: 250px;
+ padding-top: 40px;
+ font-size: 25px;
+ text-decoration: underline;
+}
+.abo-top{
+background-image: url("https://sail.co.in/sites/default/files/banner/2020-06/vision-banner.jpg");
+height: 500px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100% 100%;
+}
+/*This is end of about page*/
+/*This is start of Energy page*/
+.ene-top{
+background-image: url("https://www.energysteel.com/wp-content/uploads/2020/03/slider1-1600x551.png");
+height: 500px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100% 100%;
+}
+.head-steel{
+  padding-right: 1000px;
+  padding-top: 60px;
+  text-decoration: underline;
+  font-size: 35px;
+}
+.leftpic{
+  float: left;
+  padding-left:140px;
+}
+.rightpic{
+  float: right;
+  padding-right: 140px;
+  background-size: 300px 100px;
+}
+.mid-steel{
+  padding-right: 800px;
+  padding-top: 450px;
+  padding-left: 120px;
+  text-decoration: underline;
+  font-size: 35px;
+}
+.pro{
+font-size: 22px;
+width: 80%;
+text-align: left;
+padding-left: 120px;
+}
+.melt{
+  padding-left: 250px;
+}
+/*This is end of Production page*/
+/* This is Contact Page*/
+
+.contact{
+  position: relative;
+  min-height: 100vh;
+  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("contact.jpg");
+}
+.contact .content{
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content h4{
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+}
+.contact-p{
+  font-weight: 300;
+  color: #fff;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding-left: 70px;
+}
+
+.container .contactInfo{
+  width: 50%;
+  display:flex;
+  flex-direction: column;
+}
+.container .contactInfo .box{
+  position: relative;
+  padding: 20px 0px;
+  display: flex;
+}
+.container .contactInfo .box .icon{
+  min-width: 60px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%;
+  font-size: 22px;
+  color: #00bcd4;
+}
+.container .contactInfo .box .text{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container .contactInfo .box .text h4{
+  font-weight: 500;
+  color: #00bcd4;
+  font-size: 30px;
+}
+
+.contactForm{
+  padding: 20px;
+  width: 35%;
+  margin-left: 150px;
+  background-color: #fff;
+}
+.contactForm h5{
+  font-size: 30px;
+  padding-top: 0;
+  color:#333;
+  font-weight: 500;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline:none;
+  resize: none;
+}
+.contactForm .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color:#666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="Submit"]{
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media (max-width : 991px){
+
+  .contact{
+    padding: 50px;
+  }
+  .container{
+    flex-direction: column;
+  }
+  .container .contactInfo{
+    margin-bottom: 40px;
+  }
+  .container .contactInfo, .contactForm{
+    width: 100%;
+  }
+}
+
+/** This is drop down */
